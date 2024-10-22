@@ -5,13 +5,15 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task0.V4.Lib
     {
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double MultiplySeries = 0;
-            int i;
-            for (i = startValue; i < stopValue; i++)
+            double MultiplySeries = 1;
+            double sinValue = Math.Sin(0.1);
+
+            for (int i = startValue; i <= stopValue; i++)
             {
-                MultiplySeries = MultiplySeries + (1 / Math.Sin(i));
+                MultiplySeries *= (sinValue + i);
             }
-            return Math.Round(MultiplySeries, 3); 
+
+            return Math.Round(MultiplySeries, 3);
         }
     }
 }
