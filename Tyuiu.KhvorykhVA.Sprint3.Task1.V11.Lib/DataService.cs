@@ -15,7 +15,8 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task1.V11.Lib
                 k++;
             }
 
-            return Math.Round(multSeries, 6); 
+            
+            return Math.Round(multSeries, 5);
         }
     }
 }
