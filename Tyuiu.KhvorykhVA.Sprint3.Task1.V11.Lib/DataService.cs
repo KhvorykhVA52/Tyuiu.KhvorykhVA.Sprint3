@@ -5,16 +5,17 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task1.V11.Lib
     {
         public double GetMultiplySeries(double value, int startValue, int stopValue)
         {
-            double multSeries = 1;
+            double multSeries = 1.0;
             int k = startValue;
 
             while (k <= stopValue)
             {
-                multSeries *= (value + (double)k / 2);
+                double term = Math.Pow(value, k) + 0.5; 
+                multSeries *= term;
                 k++;
             }
 
-            return multSeries;
+            return Math.Round(multSeries, 6); 
         }
     }
 }
