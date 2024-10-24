@@ -10,13 +10,12 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task1.V11.Lib
 
             while (k <= stopValue)
             {
-                double term = Math.Pow(value, k) + 0.5; 
+                double term = (Math.Pow(value, k)) + 0.5;  
                 multSeries *= term;
                 k++;
             }
 
-            
-            return Math.Round(multSeries, 5);
+            return Math.Round(multSeries, 5); 
         }
     }
 }
