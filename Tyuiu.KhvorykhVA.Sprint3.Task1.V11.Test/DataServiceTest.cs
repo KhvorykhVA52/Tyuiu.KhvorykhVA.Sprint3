@@ -18,7 +18,7 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task1.V11.Test
             double expected = 0.005;
 
             
-            Assert.AreEqual(expected, res, 0.00001, "Результат не соответствует ожидаемому значению 0.005.");
+            Assert.AreEqual(expected, res);
         }
     }
 }
