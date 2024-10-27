@@ -5,18 +5,21 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task3.V25.Lib
     {
         public int GetMinCharCount(string value, char item)
         {
-            int count = 0;
-            foreach(char c in value)
+            int adjacentCount = 0;
+            char previousChar = '\0';
+            foreach (char currentChar in value)
             {
-                if (c == item)
+                if (currentChar == item && previousChar == item)
                 {
-                    count++;
+                    adjacentCount = 1;
+                    break; 
                 }
 
+                previousChar = currentChar; 
             }
-            return count;
 
-              
+            return adjacentCount;
         }
+
     }
 }
