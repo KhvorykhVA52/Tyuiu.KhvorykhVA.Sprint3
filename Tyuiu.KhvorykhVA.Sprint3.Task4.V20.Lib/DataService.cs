@@ -18,7 +18,8 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task4.V20.Lib
                 product *= y;
             }
 
-            return product;
+            
+            return Math.Round(product, 3);
         }
     }
 }
