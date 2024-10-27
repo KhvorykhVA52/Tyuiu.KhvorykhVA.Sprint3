@@ -1,6 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.KhvorykhVA.Sprint3.Task2.V24.Lib;
-
 namespace Tyuiu.KhvorykhVA.Sprint3.Task2.V24.Test
 {
     [TestClass]
@@ -15,7 +13,7 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task2.V24.Test
             int stopValue = 8;
             double res = ds.GetMultiplySeries(value, startValue, stopValue);
             double wait = 55217.446;
-            Assert.AreEqual(wait, res, 0.001); 
+            Assert.AreEqual(wait, res);
         }
     }
 }
