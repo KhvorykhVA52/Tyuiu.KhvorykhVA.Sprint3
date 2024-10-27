@@ -11,7 +11,7 @@ namespace Tyuiu.KhvorykhVA.Sprint3.Task3.V25.Test
             string str = "kjhgfuu gujut dtuu";
             char chr = 'u';
             double res = ds.GetMinCharCount(str, chr);
-            int wait = 6;
+            int wait = 1;
             Assert.AreEqual(wait, res);
 
     }   }
