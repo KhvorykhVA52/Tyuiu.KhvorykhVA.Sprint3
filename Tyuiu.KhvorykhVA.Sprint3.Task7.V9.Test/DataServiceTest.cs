@@ -1,22 +1,15 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tyuiu.KhvorykhVA.Sprint3.Task7.V9.Lib;
-
 namespace Tyuiu.KhvorykhVA.Sprint3.Task7.V9.Test
 {
     [TestClass]
     public class DataServiceTest
     {
         [TestMethod]
-        public void GetMassFunction()
+
+        public void TestMethod1()
         {
-            DataService ds = new DataService();
-            int startValue = -5;
-            int stopValue = 5;
-
-            double[] wait = 88;
-            double[] res = ds.GetMassFunction(startValue, stopValue);
-
-            CollectionAssert.AreEqual(wait, res);
+            DataService dataService = new DataService();
+            Assert.AreEqual([4.84], dataService.GetMassFunction(1, 2));
         }
     }
 }
