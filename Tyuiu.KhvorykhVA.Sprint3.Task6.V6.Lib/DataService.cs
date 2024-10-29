@@ -1,31 +1,24 @@
 ﻿using tyuiu.cources.programming.interfaces.Sprint3;
-namespace Tyuiu.KhvorykhVA.Sprint3.Task6.V6.Lib;
-
-public class DataService : ISprint3Task6V6
+namespace Tyuiu.KonevaDD.Sprint3.Task6.V6.Lib
 {
-    public int GetSumTheDivisors(int startValue, int stopValue)
+    public class DataService : ISprint3Task6V6
     {
-        int count = 0;
-
-        for (int x = startValue; x <= stopValue; x++)
+        public int GetSumTheDivisors(int startValue, int stopValue)
         {
-            bool hasDivisorGreaterThan10 = false;
+            int count = 0;
 
-            for (int d = 11; d <= x / 2; d++) 
+            for (int x = startValue; x <= stopValue; x++)
             {
-                if (x % d == 0)
+                for (int d = 11; d <= x; d++) 
                 {
-                    hasDivisorGreaterThan10 = true;
-                    break;
+                    if (x % d == 0)
+                    {
+                        count++; 
+                    }
                 }
             }
 
-            if (hasDivisorGreaterThan10)
-            {
-                count++;
-            }
+            return count;
         }
-
-        return count;
     }
 }
